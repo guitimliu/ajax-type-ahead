@@ -26,7 +26,7 @@ onMounted(() => {
 // 取得 API 資料
 async function getInitData() {
   try {
-    const apiUrl = '/cities.json';
+    const apiUrl = '/ajax-type-ahead/cities.json';
     const getData = await axios.get(apiUrl);
     data.value = getData.data;
     noDataText.value = '目前沒有符合條件的資料';
