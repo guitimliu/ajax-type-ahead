@@ -75,7 +75,7 @@ function showKeyword(value) {
   );
 }
 
-// 刪除 call 紀錄，並重新呼叫 API
+// 刪除 localStorage 紀錄，並重新呼叫 API
 function callApi() {
   if (keyword.value === 'call') {
     localStorage.removeItem('keyword');
